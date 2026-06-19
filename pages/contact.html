@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Contact Becky's Hair Vintage — EmailJS form and Google Maps embed." />
+    <meta name="theme-color" content="#b45309" />
+
+    <title>Contact | Becky's Hair Vintage</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet" />
+
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="icon" href="../assets/icons/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="../assets/icons/apple-touch-icon.png" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" data-aos="fade-down">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary py-2" aria-label="Primary navigation">
+        <div class="container">
+          <a class="navbar-brand d-flex align-items-center gap-2" href="../index.html" aria-label="Becky's Hair Vintage 2 Home">
+            <span class="brand-mark" aria-hidden="true">✦</span>
+            <span class="brand-text">Becky's Hair Vintage</span>
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon" aria-hidden="true"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+              <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="./services.html">Services</a></li>
+              <li class="nav-item"><a class="nav-link" href="./gallery.html">Gallery</a></li>
+
+              <li class="nav-item"><a class="nav-link active" aria-current="page" href="./contact.html">Contact</a></li>
+            </ul>
+
+            <div class="ms-lg-3 mt-3 mt-lg-0">
+
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main" class="site-main">
+      <section class="section py-5" aria-labelledby="contact-title">
+        <div class="container">
+          <div class="row g-4">
+            <div class="col-12 col-lg-6" data-aos="fade-up">
+              <h1 class="section-title" id="contact-title">Get in touch</h1>
+              <p class="text-muted">Questions about services, booking, or a specific hairstyle? Send a message.</p>
+
+              <div class="mt-3" aria-label="Follow Becky's Hair Vintage 2 on social media">
+                <div class="label-muted small mb-2">Follow us</div>
+                <div class="social-icons" role="list">
+                  <a
+                    class="social-icon-btn"
+                    href="https://www.instagram.com/glory.onyegbule?igsh=YjY4aDJrampneTNj"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Instagram"
+                    role="listitem"
+                  >
+                    <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                  </a>
+                  <a
+                    class="social-icon-btn"
+                    href="https://www.facebook.com/profile.php?id=61554486715387"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Facebook"
+                    role="listitem"
+                  >
+                    <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+                  </a>
+                  <a
+                    class="social-icon-btn"
+                    href="https://www.tiktok.com/@gloryonyegbuyle?_r=1&_t=ZS-96zW1TzWjn6"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="TikTok"
+                    role="listitem"
+                  >
+                    <i class="fa-brands fa-tiktok" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="form-card mt-3">
+
+                <form id="contactForm" novalidate>
+                  <div class="mb-3">
+                    <label class="form-label" for="contactName">Name</label>
+                    <input type="text" class="form-control" id="contactName" name="contactName" data-required="true" required />
+                  </div>
+
+                  <div class="mb-3">
+                    <label class="form-label" for="contactEmail">Email</label>
+                    <input type="email" class="form-control" id="contactEmail" name="contactEmail" data-required="true" required />
+                  </div>
+
+                  <div class="mb-3">
+                    <label class="form-label" for="contactSubject">Subject</label>
+                    <input type="text" class="form-control" id="contactSubject" name="contactSubject" data-required="true" required />
+                  </div>
+
+                  <div class="mb-3">
+                    <label class="form-label" for="contactMessage">Message</label>
+                    <textarea class="form-control" id="contactMessage" name="contactMessage" rows="5" data-required="true" required></textarea>
+                  </div>
+
+                  <button class="btn btn-success rounded-pill w-100" type="submit">
+                    <i class="fa-brands fa-whatsapp me-2" aria-hidden="true"></i>Send via WhatsApp
+                  </button>
+                  <p id="contactStatus" class="label-muted small mt-2 mb-0" role="status" aria-live="polite"></p>
+
+                </form>
+              </div>
+            </div>
+
+            <div class="col-12 col-lg-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="form-card">
+                <h2 class="h4">Find us</h2>
+                <p class="label-muted">Replace the map iframe with your salon location if needed.</p>
+
+                <div class="ratio ratio-16x9 rounded-3 overflow-hidden" style="border:1px solid rgba(255,255,255,.12)">
+                  <iframe
+                    title="Google Maps showing Becky's Hair Vintage 2 location"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    src="https://www.google.com/maps?q=Okaiuga%20Nkwoegwu%2C%20Umuahia%2C%20Abia%20State%2C%20Nigeria&output=embed"
+                    class="w-100 h-100"
+                    style="border:0"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+
+                <div class="mt-3 contact-info-grid">
+                  <!-- Contact action buttons -->
+                  <div class="contact-actions" aria-label="Quick contact actions">
+                    <a
+                      class="action-btn action-btn-call"
+                      href="tel:+2347017357366"
+                      aria-label="Call +234 7017357366"
+                    >
+                      <i class="fa-solid fa-phone me-2" aria-hidden="true"></i>
+                      Call
+                    </a>
+
+                    <a
+                      class="action-btn action-btn-whatsapp"
+                      href="https://wa.me/2347017357366?text="
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Chat on WhatsApp"
+                    >
+                      <i class="fa-brands fa-whatsapp me-2" aria-hidden="true"></i>
+                      WhatsApp
+                    </a>
+
+                    <a
+                      class="action-btn action-btn-directions"
+                      href="https://www.google.com/maps/dir/?api=1&destination=Okaiuga%20Nkwoegwu%2C%20Umuahia%2C%20Abia%20State%2C%20Nigeria"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Get directions on Google Maps"
+                    >
+                      <i class="fa-solid fa-route me-2" aria-hidden="true"></i>
+                      Directions
+                    </a>
+                  </div>
+
+                  <!-- Contact Information Cards -->
+                  <div class="info-card">
+                    <div class="d-flex gap-2 align-items-start">
+                      <i class="fa-solid fa-location-dot mt-1" aria-hidden="true" style="color: var(--primary-2)"></i>
+                      <div>
+                        <div class="fw-semibold">Location</div>
+                        <div class="label-muted small">Okaiuga Nkwoegwu, Umuahia, Abia State, Nigeria</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="info-card">
+                    <div class="d-flex gap-2 align-items-start">
+                      <i class="fa-solid fa-phone mt-1" aria-hidden="true" style="color: var(--primary-2)"></i>
+                      <div>
+                        <div class="fw-semibold">Phone Number</div>
+                        <div class="label-muted small">+234 7017357366</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="info-card">
+                    <div class="d-flex gap-2 align-items-start">
+                      <i class="fa-solid fa-clock mt-1" aria-hidden="true" style="color: var(--primary-2)"></i>
+                      <div>
+                        <div class="fw-semibold">Working Hours</div>
+                        <div class="label-muted small">
+                          <div><span class="fw-semibold">Monday–Saturday:</span> 8:00 AM – 7:00 PM</div>
+                          <div class="mt-1"><span class="fw-semibold">Sunday:</span> Appointment Only</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer border-top">
+      <div class="container py-4">
+        <div class="row g-3 align-items-center">
+          <div class="col-12 col-md-6">
+            <div class="d-flex align-items-center gap-2">
+              <span class="brand-mark" aria-hidden="true">✦</span>
+              <span class="fw-semibold">Becky's Hair Vintage</span>
+            </div>
+            <p class="text-muted mb-0 mt-2 small">© <span id="year"></span> All rights reserved.</p>
+            <p class="footer-dev-credit mb-0 small">Created and Developed by <span class="footer-dev-name">PROWEBSOLUTION</span></p>
+            <p class="footer-whatsapp mb-0 small">
+              <i class="fa-brands fa-whatsapp footer-whatsapp-icon" aria-hidden="true"></i>
+              WhatsApp: <a class="footer-whatsapp-link" href="https://wa.me/2349047562230" target="_blank" rel="noopener noreferrer">09047562230</a>
+            </p>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="d-flex flex-column flex-md-row gap-3 align-items-md-center justify-content-md-end">
+              <ul class="footer-links list-unstyled d-flex gap-3 justify-content-md-end mb-0">
+                <li><a href="./services.html">Services</a></li>
+                <li><a href="./gallery.html">Gallery</a></li>
+
+                <li><a href="./contact.html">Contact</a></li>
+              </ul>
+
+              <div class="social-icons" aria-label="Social media links">
+                <a
+                  class="social-icon-btn"
+                  href="https://www.instagram.com/glory.onyegbule?igsh=YjY4aDJrampneTNj"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Instagram"
+                >
+                  <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                </a>
+                <a
+                  class="social-icon-btn"
+                  href="https://www.facebook.com/profile.php?id=61554486715387"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Facebook"
+                >
+                  <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+                </a>
+                <a
+                  class="social-icon-btn"
+                  href="https://www.tiktok.com/@gloryonyegbuyle?_r=1&_t=ZS-96zW1TzWjn6"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="TikTok"
+                >
+                  <i class="fa-brands fa-tiktok" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js" defer></script>
+    <script src="../js/main.js" defer></script>
+
+    <!-- EmailJS -->
+    <script src="../js/contact.js" defer></script>
+
+    <script>
+      (function () {
+        'use strict';
+
+        const WHATSAPP_NUMBER = '2347017357366';
+
+        function show(statusEl, type, msg) {
+          if (!statusEl) return;
+          statusEl.classList.remove('text-success');
+          statusEl.classList.remove('text-danger');
+          statusEl.classList.add(type === 'success' ? 'text-success' : 'text-danger');
+          statusEl.textContent = msg;
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+          const form = document.getElementById('contactForm');
+          if (!form) return;
+
+          const statusEl = document.getElementById('contactStatus');
+          const required = form.querySelectorAll('[data-required="true"]');
+
+          function validate() {
+            let ok = true;
+
+            required.forEach((field) => {
+              const value = (field.value || '').trim();
+              if (!value) ok = false;
+
+              if (field.type === 'email' && value) {
+                const emailOk = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
+                if (!emailOk) ok = false;
+              }
+            });
+
+            return ok;
+          }
+
+          form.addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            if (!validate()) {
+              show(statusEl, 'error', 'Please complete all required fields with valid info.');
+              return;
+            }
+
+            const name = (form.contactName.value || '').trim();
+            const email = (form.contactEmail.value || '').trim();
+            const subject = (form.contactSubject.value || '').trim();
+            const message = (form.contactMessage.value || '').trim();
+
+            const whatsappText = `Name: ${name}\nEmail: ${email}\nSubject: ${subject}\nMessage: ${message}`;
+            const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(whatsappText)}`;
+
+            show(statusEl, 'success', 'Sent! Opening WhatsApp...');
+            window.open(url, '_blank', 'noopener,noreferrer');
+            form.reset();
+          });
+        });
+      })();
+    </script>
+
+  </body>
+</html>
+

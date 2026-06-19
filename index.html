@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Becky's Hair Vintage — professional hair styling, vintage-inspired looks, and bookings." />
+    <meta name="theme-color" content="#b45309" />
+
+    <title>Becky's Hair Vintage</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet" />
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet" />
+
+    <!-- AOS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+    <!-- Swiper -->
+    <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet" />
+
+    <!-- GLightbox -->
+    <link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet" />
+
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- Favicons (placeholders) -->
+    <link rel="icon" href="./assets/icons/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="./assets/icons/apple-touch-icon.png" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- Header / Navbar -->
+    <header class="site-header" data-aos="fade-down">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary py-2" aria-label="Primary navigation">
+        <div class="container">
+          <a class="navbar-brand d-flex align-items-center gap-2" href="./index.html" aria-label="Becky's Hair Vintage 2 Home">
+            <span class="brand-mark" aria-hidden="true">✦</span>
+            <span class="brand-text">Becky's Hair Vintage</span>
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon" aria-hidden="true"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+              <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="./pages/services.html">Services</a></li>
+              <li class="nav-item"><a class="nav-link" href="./pages/gallery.html">Gallery</a></li>
+
+              <li class="nav-item"><a class="nav-link" href="./pages/contact.html">Contact</a></li>
+            </ul>
+
+            <div class="ms-lg-3 mt-3 mt-lg-0">
+
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main" class="site-main">
+      <!-- Hero -->
+      <section class="hero position-relative overflow-hidden">
+        <div class="hero-bg" aria-hidden="true"></div>
+        <div class="container py-5 py-lg-6">
+          <div class="row align-items-center g-4">
+            <div class="col-12 col-lg-6">
+              <div class="hero-badge" data-aos="fade-up">
+                <span class="badge rounded-pill text-bg-light"><i class="fa-solid fa-scissors me-2" aria-hidden="true"></i> Vintage-inspired modern style</span>
+              </div>
+              <h1 class="hero-title mt-3" data-aos="fade-up" data-aos-delay="100">
+                Styled for confidence —
+                <span class="text-accent">crafted with care</span>.
+              </h1>
+              <p class="hero-lead" data-aos="fade-up" data-aos-delay="200">
+                Welcome to Becky's Hair Vintage 2. Explore classic techniques, modern trends, and personalized services designed around you.
+              </p>
+              <div class="hero-cta d-flex flex-column flex-sm-row gap-2" data-aos="fade-up" data-aos-delay="300">
+
+                <a class="btn btn-outline-primary rounded-pill" href="./pages/gallery.html"><i class="fa-solid fa-image me-2" aria-hidden="true"></i>View gallery</a>
+              </div>
+              <div class="hero-trust d-flex flex-wrap gap-3 mt-4" data-aos="fade-up" data-aos-delay="350">
+                <div class="trust-item"><i class="fa-solid fa-star" aria-hidden="true"></i><span>Top-rated</span></div>
+                <div class="trust-item"><i class="fa-solid fa-heart" aria-hidden="true"></i><span>Client-first</span></div>
+                <div class="trust-item"><i class="fa-solid fa-wand-magic-sparkles" aria-hidden="true"></i><span>Modern vintage looks</span></div>
+              </div>
+            </div>
+
+            <div class="col-12 col-lg-6" data-aos="zoom-in" data-aos-delay="150">
+              <div class="hero-card shadow-sm">
+                <div class="hero-card-top">
+                  <h2 class="h4 mb-1">Today’s featured look</h2>
+                  <p class="text-muted mb-0">Tap to preview</p>
+                </div>
+
+                <div class="hero-preview ratio ratio-16x10">
+                  <img
+                    src="./assets/images/hero-featured.jpg"
+                    alt="Featured vintage hairstyle preview"
+                    loading="lazy"
+                  />
+                  <a
+                    href="./assets/images/hero-featured.jpg"
+                    class="glightbox btn btn-light rounded-circle preview-btn"
+                    aria-label="Preview featured look in a lightbox"
+                  >
+                    <i class="fa-solid fa-plus" aria-hidden="true"></i>
+                  </a>
+                </div>
+
+                <div class="hero-card-bottom d-flex gap-2 flex-wrap">
+                  <span class="chip"><i class="fa-solid fa-bolt" aria-hidden="true"></i>Quick refresh</span>
+                  <span class="chip"><i class="fa-solid fa-gem" aria-hidden="true"></i>Vintage finish</span>
+                  <span class="chip"><i class="fa-solid fa-user-check" aria-hidden="true"></i>Personalized styling</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services quick grid -->
+      <section class="section py-5" aria-labelledby="services-title">
+        <div class="container">
+          <div class="d-flex align-items-end justify-content-between flex-wrap gap-3 mb-4">
+            <div>
+              <h2 class="section-title" id="services-title" data-aos="fade-up">Popular services</h2>
+              <p class="text-muted mb-0" data-aos="fade-up" data-aos-delay="100">Choose your perfect look. We’ll tailor details to you.</p>
+            </div>
+            <a class="link-accent" href="./pages/services.html" data-aos="fade-up" data-aos-delay="150">See all services <i class="fa-solid fa-arrow-right ms-1" aria-hidden="true"></i></a>
+          </div>
+
+          <div class="row g-3">
+            <article class="col-12 col-md-6 col-lg-4" data-aos="fade-up">
+              <div class="service-card h-100">
+                <div class="service-icon" aria-hidden="true"><i class="fa-solid fa-cut"></i></div>
+                <h3 class="h5">Vintage Cuts</h3>
+                <p>Classic shapes with a modern fit — designed to flatter your face and lifestyle.</p>
+                <ul class="mini-list">
+                  <li>Consultation & shape planning</li>
+                  <li>Styling & finishing</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="50">
+              <div class="service-card h-100">
+                <div class="service-icon" aria-hidden="true"><i class="fa-solid fa-wand-magic"></i></div>
+                <h3 class="h5">Modern Blowouts</h3>
+                <p>Smooth, bouncy results with long-lasting volume and shine.</p>
+                <ul class="mini-list">
+                  <li>Heat protection included</li>
+                  <li>Finish tailored to texture</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+              <div class="service-card h-100">
+                <div class="service-icon" aria-hidden="true"><i class="fa-solid fa-sparkles"></i></div>
+                <h3 class="h5">Color & Gloss</h3>
+                <p>Refresh your tone with glossy dimension and personalized care.</p>
+                <ul class="mini-list">
+                  <li>Color consultation</li>
+                  <li>Aftercare guidance</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Gallery teaser (Swiper) -->
+      <section class="section section-alt py-5" aria-labelledby="gallery-title">
+        <div class="container">
+          <div class="d-flex align-items-end justify-content-between flex-wrap gap-3 mb-3">
+            <div>
+              <h2 class="section-title" id="gallery-title" data-aos="fade-up">Gallery highlights</h2>
+              <p class="text-muted mb-0" data-aos="fade-up" data-aos-delay="100">Swipe through a few of our favorite transformations.</p>
+            </div>
+            <a class="link-accent" href="./pages/gallery.html" data-aos="fade-up" data-aos-delay="150">Open full gallery <i class="fa-solid fa-arrow-right ms-1" aria-hidden="true"></i></a>
+          </div>
+
+          <div class="swiper mySwiper" data-aos="fade-up" data-aos-delay="200">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="./assets/images/gallery-1.jpg" class="glightbox" aria-label="Open gallery image 1">
+                  <img src="./assets/images/gallery-1.jpg" alt="Gallery look 1" loading="lazy" />
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="./assets/images/gallery-2.jpg" class="glightbox" aria-label="Open gallery image 2">
+                  <img src="./assets/images/gallery-2.jpg" alt="Gallery look 2" loading="lazy" />
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="./assets/images/gallery-3.jpg" class="glightbox" aria-label="Open gallery image 3">
+                  <img src="./assets/images/gallery-3.jpg" alt="Gallery look 3" loading="lazy" />
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="./assets/images/gallery-4.jpg" class="glightbox" aria-label="Open gallery image 4">
+                  <img src="./assets/images/gallery-4.jpg" alt="Gallery look 4" loading="lazy" />
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="./assets/images/gallery-5.jpg" class="glightbox" aria-label="Open gallery image 5">
+                  <img src="./assets/images/gallery-5.jpg" alt="Gallery look 5" loading="lazy" />
+                </a>
+              </div>
+            </div>
+
+            <div class="swiper-pagination" aria-hidden="true"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About the Founder -->
+      <section class="section section-alt py-5" aria-labelledby="founder-heading">
+        <div class="container">
+          <div class="d-flex align-items-end justify-content-between flex-wrap gap-3 mb-4">
+            <div>
+              <div class="founder-kicker" data-aos="fade-up">ABOUT THE FOUNDER</div>
+              <h2 class="founder-title" id="founder-heading" data-aos="fade-up" data-aos-delay="100">Meet Becky</h2>
+            </div>
+          </div>
+
+          <div class="row g-4 align-items-center">
+            <div class="col-12 col-lg-5">
+              <div class="founder-portrait-wrap" data-aos="zoom-in" data-aos-delay="150">
+                <div class="founder-frame" aria-hidden="true"></div>
+                <figure class="founder-portrait m-0">
+                  <img
+                    src="./assets/images/profile.jpg"
+                    alt="Becky — founder of Becky's Hair Vintage"
+                    loading="lazy"
+                  />
+                  <figcaption class="founder-portrait-caption">
+                    <span class="founder-caption-pill"><i class="fa-solid fa-gem" aria-hidden="true"></i> Luxury care</span>
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+
+            <div class="col-12 col-lg-7">
+              <div class="founder-content">
+                <div class="founder-text" data-aos="fade-up">
+                  <p class="mb-3">
+                    My name is Becky, the founder and creative force behind Becky's Hair Vintage. I believe that beauty is more than appearance—it's confidence, self-expression, and feeling comfortable in your own skin.
+                  </p>
+                  <p class="mb-3">
+                    With dedication, skill, and a passion for excellence, I strive to provide every client with a personalized experience that leaves them satisfied and beautiful.
+                  </p>
+                  <p class="mb-4">
+                    My goal is to create styles that not only look amazing but also reflect the unique personality of each client. Every hairstyle, nail design, and beauty service is delivered with care, precision, and a commitment to quality.
+                  </p>
+                </div>
+
+                <h3 class="founder-subtitle" data-aos="fade-up" data-aos-delay="80">Why Choose Us?</h3>
+
+                <div class="founder-features" role="list" aria-label="Why choose Becky's Hair Vintage">
+                  <div class="feature-card" role="listitem" data-aos="fade-up">
+                    <div class="feature-icon" aria-hidden="true"><i class="fa-solid fa-circle-check"></i></div>
+                    <div class="feature-body">Professional and friendly service</div>
+                  </div>
+                  <div class="feature-card" role="listitem" data-aos="fade-up" data-aos-delay="50">
+                    <div class="feature-icon" aria-hidden="true"><i class="fa-solid fa-hand-holding-heart"></i></div>
+                    <div class="feature-body">Quality hair and beauty treatments</div>
+                  </div>
+                  <div class="feature-card" role="listitem" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon" aria-hidden="true"><i class="fa-solid fa-tag"></i></div>
+                    <div class="feature-body">Affordable pricing</div>
+                  </div>
+                  <div class="feature-card" role="listitem" data-aos="fade-up" data-aos-delay="150">
+                    <div class="feature-icon" aria-hidden="true"><i class="fa-solid fa-soap"></i></div>
+                    <div class="feature-body">Clean and comfortable environment</div>
+                  </div>
+                  <div class="feature-card" role="listitem" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon" aria-hidden="true"><i class="fa-solid fa-house-chimney"></i></div>
+                    <div class="feature-body">Home service options available</div>
+                  </div>
+                  <div class="feature-card" role="listitem" data-aos="fade-up" data-aos-delay="250">
+                    <div class="feature-icon" aria-hidden="true"><i class="fa-solid fa-users"></i></div>
+                    <div class="feature-body">Customer satisfaction is our priority</div>
+                  </div>
+                </div>
+
+                <div class="founder-cta" data-aos="fade-up" data-aos-delay="300">
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer border-top">
+      <div class="container py-4">
+        <div class="row g-3 align-items-center">
+          <div class="col-12 col-md-6">
+            <div class="d-flex align-items-center gap-2">
+              <span class="brand-mark" aria-hidden="true">✦</span>
+              <span class="fw-semibold">Becky's Hair Vintage</span>
+            </div>
+            <p class="text-muted mb-0 mt-2 small">© <span id="year"></span> All rights reserved.</p>
+            <p class="footer-dev-credit mb-0 small">Created and Developed by <span class="footer-dev-name">PROWEBSOLUTION</span></p>
+            <p class="footer-whatsapp mb-0 small">
+              <i class="fa-brands fa-whatsapp footer-whatsapp-icon" aria-hidden="true"></i>
+              WhatsApp: <a class="footer-whatsapp-link" href="https://wa.me/2349047562230" target="_blank" rel="noopener noreferrer">+2349047562230</a>
+            </p>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="d-flex flex-column flex-md-row gap-3 align-items-md-center justify-content-md-end">
+              <ul class="footer-links list-unstyled d-flex gap-3 justify-content-md-end mb-0">
+                <li><a href="./pages/services.html">Services</a></li>
+                <li><a href="./pages/gallery.html">Gallery</a></li>
+
+                <li><a href="./pages/contact.html">Contact</a></li>
+              </ul>
+
+              <div class="social-icons" aria-label="Social media links">
+                <a
+                  class="social-icon-btn"
+                  href="https://www.instagram.com/glory.onyegbule?igsh=YjY4aDJrampneTNj"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Instagram"
+                >
+                  <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                </a>
+                <a
+                  class="social-icon-btn"
+                  href="https://www.facebook.com/profile.php?id=61554486715387"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Facebook"
+                >
+                  <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+                </a>
+                <a
+                  class="social-icon-btn"
+                  href="https://www.tiktok.com/@gloryonyegbuyle?_r=1&_t=ZS-96zW1TzWjn6"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="TikTok"
+                >
+                  <i class="fa-brands fa-tiktok" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts (defer for performance) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js" defer></script>
+
+    <script src="./js/main.js" defer></script>
+    <script src="./js/gallery.js" defer></script>
+  </body>
+</html>
+

@@ -1,0 +1,14 @@
+/* Responsive additions */
+
+@media (min-width: 768px){
+  .hero{padding-top:2.5rem}
+}
+
+@media (min-width: 992px){
+  .swiper-slide img{height:320px}
+}
+
+@media (prefers-reduced-motion: reduce){
+  [data-aos]{transition:none !important; transform:none !important;}
+}
+
